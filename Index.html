@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor con Scroll</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo del contenedor con barra de desplazamiento */
+        .scrollable-container {
+            max-height: 400px; /* Ajusta la altura máxima según lo necesites */
+            overflow-y: auto;  /* Habilita el desplazamiento vertical si el contenido es demasiado alto */
+            border: 1px solid #ccc; /* Borde opcional para visualizar el contenedor */
+            padding: 15px; /* Espacio interno del contenedor */
+            margin-bottom: 20px; /* Margen inferior opcional para separación */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h3 style="text-align:center">Contenedor con Scroll</h3>
+        <div class="scrollable-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Estado Civil</th>
+                        <th>Hijos</th>
+                        <th>Intereses</th>
+                    </tr>
+                </thead>
+                <tbody id="tmostrar">
+                    <!-- Ejemplo de filas repetidas para mostrar el scroll -->
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>(555) 123-4567</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>María López</td>
+                        <td>maria.lopez@example.com</td>
+                        <td>(555) 234-5678</td>
+                        <td>SOLTERO</td>
+                        <td>NO</td>
+                        <td>Deportes, Otros</td>
+                    </tr>
+                    <!-- Agrega más filas para hacer que el contenido sea largo y pruebes el scroll -->
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro González</td>
+                        <td>pedro.gonzalez@example.com</td>
+                        <td>(555) 345-6789</td>
+                        <td>CASADO</td>
+                        <td>SI</td>
+                        <td>Libros, Música, Deportes</td>
+                    </tr>
+                    <!-- Repite las filas según sea necesario para hacer que el contenido sea largo -->
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center">
+            <button id="boton" class="btn btn-primary mr-2">Modificar</button>   
+            <button id="boton2" class="btn btn-secondary">Regresar</button>   
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
